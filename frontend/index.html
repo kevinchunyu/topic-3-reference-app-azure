@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab - Sample Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-container">
+    <header>
+      <h1>Simple Lightweight Login Application</h1>
+      <p>This app is intentionally insecure for educational purposes.</p>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Dark Mode</span>
+      </div>
+    </header>
+
+    <section class="card" id="loginSection">
+      <h2>🔐 Login</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUsername" placeholder="Username" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+        <p class="response" id="loginResponse"></p>
+      </form>
+    </section>
+
+    <section class="card" id="registerSection">
+      <h2>📝 Register</h2>
+      <form id="registerForm">
+        <input type="text" id="registerUsername" placeholder="Username" required />
+        <input type="email" id="registerEmail" placeholder="Email" required />
+        <input type="password" id="registerPassword" placeholder="Password" required />
+        <button type="submit">Register</button>
+        <div class="response" id="registerResponse"></div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>📁 Download File</h2>
+      <input type="text" id="filename" placeholder="Enter filename (e.g. test.txt)" />
+      <button id="downloadBtn">Download</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>📚 Learn responsibly. <a href="/health">App Status</a></p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
