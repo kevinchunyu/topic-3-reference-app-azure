@@ -87,7 +87,7 @@ pipeline {
             sh '''
               ${SCANNER_HOME}/bin/sonar-scanner \
                 -Dsonar.login=${SONAR_TOKEN} \
-                -Dsonar.host.url=http://sonarqube:9000 \
+                -Dsonar.host.url=http://sonar.internal:9000 \
                 -Dsonar.projectKey=${STUDENT_PROJECT_KEY} \
                 -Dsonar.projectName="DevSecOps Lab - ${STUDENT_ID}" \
                 -Dsonar.projectVersion=${BUILD_ID} \
